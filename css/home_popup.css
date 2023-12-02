@@ -1,0 +1,93 @@
+:root{
+    --black: #242527;
+    --light-balck: #3a3b3d;
+    --primary: #9bcd22;
+}
+.popup_outer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup_inner{
+    border-radius: 7px;
+    max-width: 1000px;
+    width: 98%;
+    margin: 0 auto;
+    overflow: hidden;
+    min-height: 600px;
+}
+.popup_inner .popup_close{
+    background-color: var(--black);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid white;
+}
+.popup_inner .sidebar{
+    max-width: 250px;
+    height: 100%;
+}
+.popup_inner .sidebar_navigation{
+    background-color: var(--black);
+    border-radius: 7px;
+    padding: 5px 0;
+}
+.popup_inner .sidebar_navigation ul li{
+    margin-left: 0 !important;
+}
+.popup_inner .sidebar_navigation ul li a{
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+.popup_inner .sidebar_navigation ul li a:hover{
+   background-color: var(--light-balck);
+}
+.popup_inner .sidebar_navigation ul li a.active{
+    background-color: var(--primary);
+    color: var(--black);
+    font-weight: 500;
+ }
+ .popup_inner .sections{
+    flex-grow: 1;
+    padding: 10px 10px 10px 0;
+ }
+ .popup_inner .section{
+    background: radial-gradient(rgb(241, 241, 241) , rgb(218, 218, 218) , rgb(241, 241, 241));
+    border-radius: 7px;
+    height: 100%;
+    width: 100%;
+    padding: 20px 30px;
+    display: none;
+ }
+ .popup_inner .section.active{
+    display: flex;
+ }
+ .popup_inner .sections h1{
+    text-shadow: none;
+    color: black;
+    text-transform: lowercase; 
+ }

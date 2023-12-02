@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>catchakiwi</title>
+    <link rel="icon" href="images/favicon.ico" type="image/ico" sizes="16x16" />
+    <!--<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&display=swap" rel="stylesheet">-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/bs_leftnavi.css" />
+    <link href="css/styles-popup.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/home_popup.css" />
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script> -->
+    <script src="js/bs_leftnavi.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script
+      type="text/javascript"
+      src="js/fancybox/jquery.fancybox-1.3.4.pack.js"
+    ></script>
+    <script type="text/javascript" src="js/scriptspopup.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "270px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <!--<script>
+$(document).ready(function(){
+  $(".menutag").click(function(){
+    $("#mySidenav").toggle();
+  });
+});
+</script>-->
+    <script>
+      $(document).ready(function () {
+        $(".popup_close").click(function () {
+          $(".popup_outer").hide();
+        });
+        $("#newcacpop").click(function () {
+          $(".popup_outer").show();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="popup_outer" style="display: none">
+      <div class="popup_inner bg-white position-relative">
+        <button type="button" class="popup_close">
+          <i class="fa fa-close"></i>
+        </button>
+        <div class="d-flex align-items-start h-100 justify-content-start">
+          <div class="h-100 p-2 d-flex flex-column align-items-start">
+            <div class="sidebar w-100">
+              <div class="logo_cover pb-3">
+                <img src="images/logo.png" class="w-100" alt="logo" />
+              </div>
+            </div>
+            <div class="sidebar_navigation w-100 flex-1 h-100">
+              <ul class="ps-0 mb-0 h-100 flex-1">
+                <li><a href="#" data-section="happening" class="active">What's happening</a></li>
+                <li><a href="#" data-section="info">Info</a></li>
+                <li><a href="#" data-section="features">New Features</a></li>
+                <li><a href="#" data-section="faq">FAQ</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
+                <li><a href="#" data-section="sponsors">Sponsors</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sections pe-3 h-100">
+            <div class="section w-100 active" id="happening">
+              <h1 class="text-black">What's happening sections content will get displayed here</h1>
+            </div>
+            <div class="section w-100" id="info">
+              <h1 class="text-black">Info sections content will get displayed here</h1>
+            </div>
+            <div class="section w-100" id="features">
+              <h1 class="text-black">New Features sections content will get displayed here</h1>
+            </div>
+            <div class="section w-100" id="faq">
+              <h1 class="text-black">FAQ sections content will get displayed here</h1>
+            </div>
+            <div class="section w-100" id="contact">
+              <h1 class="text-black">Contact sections content will get displayed here</h1>
+            </div>
+            <div class="section w-100" id="sponsors">
+              <h1 class="text-black">Sponsors sections content will get displayed here</h1>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home_bg">
+      <!-- Header start-->
+      <div class="top_bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+              <p class="nz_region">NZ-Aotearoa</p>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-12 top_menu">
+              <nav>
+                <ul>
+                  <li><a href="business.html">Businesses</a></li>
+                  <li><a href="noticeboard.html">Notice Board</a></li>
+                  <li><a href="article.html">Articles</a></li>
+                  <li><a href="#">Forum</a></li>
+                  <li class="login_button"><a href="login.html">Login</a></li>
+                </ul>
+              </nav>
+              <div class="mobtop_login"><a href="login.html">Login</a></div>
+              <div class="slide_menu">
+                <div id="mySidenav" class="sidenav">
+                  <a
+                    href="javascript:void(0)"
+                    class="closebtn"
+                    onclick="closeNav()"
+                    >&times;</a
+                  >
+                  <!--<ul>
+  <li class="active"><a href="#">Home</a></li>
+  <li><a href="#">Who We Are</a></li>
+  <li><a href="#">Business Listing</a></li>
+  <li><a href="#">Browse our categories</a></li>
+  <li><a href="#">Contact Us</a></li>
+</ul>-->
+                  <img src="images/menu_logo.png" alt="" class="menu_logo" />
+                  <div class="menu_loginbut"><a href="#">Login</a></div>
+                  <div class="gw-sidebar">
+                    <div id="gw-sidebar" class="gw-sidebar">
+                      <div class="nano-content">
+                        <ul class="gw-nav gw-nav-list">
+                          <li>
+                            <a href="javascript:void(0)"
+                              ><img src="images/garage-sale.png" alt="" />
+                              <span class="gw-menu-text">Garagesales</span>
+                              <b></b>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)">
+                              <img src="images/vehicle.png" alt="" /><span
+                                class="gw-menu-text"
+                                >Vehicles</span
+                              >
+                              <b></b>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)"
+                              ><img src="images/real-estate.png" alt="" />
+                              <span class="gw-menu-text">Real Estate</span>
+                              <b></b>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)"
+                              ><img src="images/catch-a-ride.png" alt="" />
+                              <span class="gw-menu-text">Catch-a-Ride</span>
+                              <b></b>
+                            </a>
+                          </li>
+
+                          <li class="init-arrow-down subm">
+                            <a href="javascript:void(0)"
+                              ><img src="images/bussiness.png" alt="" />
+                              Business</a
+                            ><span class="gw-menu-text"></span>
+                            <b class="gw-arrow"></b>
+                            <ul class="gw-submenu">
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >Add your business</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >Latest Businesses joined</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >Top Rated Businesses</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >Business Categories</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >Edit your Business Listing</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="init-arrow-down subm">
+                            <a href="javascript:void(0)">
+                              <img src="images/noticeboard.png" alt="" /><span
+                                class="gw-menu-text"
+                                >Noticeboard</span
+                              >
+                              <b class="gw-arrow icon-arrow-up8"></b>
+                            </a>
+                            <ul class="gw-submenu">
+                              <li>
+                                <a href="javascript:void(0)">Add a notice</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >View latest notices</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >Notice categories</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >Edit your notices</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="init-arrow-down subm">
+                            <a href="javascript:void(0)"
+                              ><img src="images/Articles.png" alt="" />
+                              <span class="gw-menu-text">Articles</span> <b></b>
+                            </a>
+                            <ul class="gw-submenu">
+                              <li>
+                                <a href="javascript:void(0)">Add an Article</a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >View latest Articles</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >View most read Articles</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >Article categories</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  >Edit your Article</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="javascript:void(0)"
+                              ><img src="images/forum.png" alt="" />
+                              <span class="gw-menu-text">Forum</span> <b></b>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <span onclick="openNav()" class="menutag"
+                  >Menu <img src="images/menu_icon.png" alt=""
+                /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="logo">
+          <h1>
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          </h1>
+        </div>
+      </div>
+      <!-- Header start end-->
+
+      <!-- body start-->
+      <div class="container">
+        <div class="home_midbody">
+          <h2>Search Your Kiwi Business Community</h2>
+          <p>
+            So often, two people who need to connect walk straight past each
+            other in the street. Don't let Catchakiwi become just an online
+            community, let it become the hub of our community.
+          </p>
+          <div>
+            <button type="button" class="" id="newcacpop">
+              The new catchakiwi is coming
+            </button>
+          </div>
+          <div class="home_searchsec">
+            <form action="" method="post">
+              <input
+                name=""
+                type="text"
+                placeholder="Services I’m looking for"
+              />
+              <input
+                name=""
+                type="text"
+                placeholder="Enter your location"
+                class="location"
+              />
+              <input name="" type="submit" value="Search" />
+            </form>
+          </div>
+          <div class="add_getqutebutton">
+            <a href="addyourbusiness.html">Add Your Business</a>
+            <a href="#">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+      <div class="for_cellphonepara">
+        <p>
+          So often, two people who need to connect walk straight past each other
+          in the street. Don't let Catchakiwi become just an online community,
+          let it become the hub of our community.
+        </p>
+      </div>
+      <!-- body start end-->
+
+      <!-- footer start-->
+      <div class="full_footer home">
+        <div class="container">
+          <div class="footer_logo">
+            <a href="#"><img src="images/footer_logo.png" alt="" /></a>
+          </div>
+          <div class="footer_links">
+            <ul>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="fot_copyr">
+              <p class="powerdby">Proudly Kiwi Owned & Operated</p>
+              <p class="copy">© 2020 All Rights Reserved, Catchakiwi Limited</p>
+              <p class="social">
+                <a href="#"><img src="images/footer_fb.png" alt="" /></a>
+                <a href="#"><img src="images/footer_instagram.png" alt="" /></a>
+                <a href="#"><img src="images/footer_twitter.png" alt="" /></a>
+                <a href="#"><img src="images/footer_linkdin.png" alt="" /></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer start end-->
+    </div>
+
+    <script src="js/home_popup.js"></script>
+  </body>
+</html>
