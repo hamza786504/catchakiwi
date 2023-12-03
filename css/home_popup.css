@@ -221,7 +221,9 @@
    .sidebar_cover{
       width: 100% !important;
       padding: 4px !important;
-      height: 55px !important;
+      height: 52px !important;
+      flex-direction: row !important;
+      position: relative;
    }
    .sidebar_navigation ul{
       display: flex;
@@ -231,7 +233,8 @@
       overflow-y: hidden;
    }
    .sidebar_navigation{
-      padding: 5px !important;
+      padding: 5px 5px 3px !important;
+      width: calc(100% - 34px) !important;
    }
    .sidebar_navigation ul li{
       list-style:  none !important;
@@ -253,6 +256,25 @@
    }
    .section{
       padding: 10px !important;
+   }
+   .popup_inner > .popup_close{
+      display: none !important;
+   }
+   .popup_inner .sidebar_cover .popup_close{
+      background-color: var(--black);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 35px;
+      width: 35px;
+      border-radius: 7px;
+      cursor: pointer;
+      outline: none;
+      border: 1px solid white;
+      position: relative;
+      margin-left: 3px;
+      height: 45px;
    }
     
    #sponsors .images{
