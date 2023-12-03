@@ -23,7 +23,8 @@
     width: 98%;
     margin: 0 auto;
     overflow: hidden;
-    min-height: 600px;
+    max-height: 600px;
+    height: 100%;
 }
 .popup_inner .popup_close{
     background-color: var(--black);
@@ -41,9 +42,9 @@
     outline: none;
     border: 1px solid white;
 }
-.popup_inner .sidebar{
-    max-width: 250px;
-    height: 100%;
+.popup_inner .sidebar_cover{
+    width: 250px;
+    box-sizing: border-box;
 }
 .popup_inner .sidebar_navigation{
     background-color: var(--black);
@@ -72,11 +73,12 @@
     font-weight: 500;
  }
  .popup_inner .sections{
-    flex-grow: 1;
+    width: calc(100% - 250px);
     padding: 10px 10px 10px 0;
- }
- .popup_inner .section{
-    background: radial-gradient(rgb(241, 241, 241) , rgb(218, 218, 218) , rgb(241, 241, 241));
+   }
+   .popup_inner .section{
+    overflow-y: scroll;
+    background: linear-gradient(-45deg, rgb(241, 241, 241) , rgb(218, 218, 218) , rgb(241, 241, 241));
     border-radius: 7px;
     height: 100%;
     width: 100%;
@@ -84,10 +86,124 @@
     display: none;
  }
  .popup_inner .section.active{
-    display: flex;
+    display: block;
  }
- .popup_inner .sections h1{
-    text-shadow: none;
-    color: black;
-    text-transform: lowercase; 
+ .popup_inner .sections h1,
+ .popup_inner .sections h2,
+ .popup_inner .sections h3,
+ .popup_inner .sections h4,
+ .popup_inner .sections h5,
+ .popup_inner .sections h6
+ {
+    text-shadow: none !important;
+    color: black !important;
+    text-transform: none !important; 
  }
+ .text-primary{
+    color: var(--primary) !important;
+ }
+ .text-secondary{
+    color: var(--black) !important;
+ }
+ .text-bold{
+    font-weight: 700;
+ }
+
+ .popup_notify_submit , .contact_submit{
+    background: #9bcd22;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    height: 36px;
+    width: 164px;
+    cursor: pointer;
+ }
+
+
+ .sections .section::-webkit-scrollbar {
+   width: 3px;
+ }
+ 
+ /* Track */
+ .sections .section::-webkit-scrollbar-track {
+   background: transparent;
+ }
+ 
+ /* Handle */
+ .sections .section::-webkit-scrollbar-thumb {
+   background: #888;
+ }
+ 
+ /* Handle on hover */
+ .sections .section::-webkit-scrollbar-thumb:hover {
+   background: #555;
+ }
+
+
+ #info h3 , #features h3{
+    font-size: 30px;
+ }
+
+
+ .text-semibold{
+    font-weight: 600;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion , .accordion .accordion-item , .accordion .accordion-button{
+   background-color: transparent !important;
+   border: none;
+}
+.accordion .accordion-button{
+   padding-left: 50px;
+}
+.accordion .accordion-button::after{
+   display: none;
+}
+.accordion .accordion-button::before{
+   background-color: var(--black);
+   height: 30px;
+   width: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 20px;
+   font-weight: 500;
+   position: absolute;
+   top: 50%;
+   left: 10px;
+   transform: translateY(-50%);
+   border-radius: 50%;
+}
+
+.accordion-button:not(.collapsed)::before{
+   content: "-";
+   padding-bottom: 6px;
+}
+.accordion-button.collapsed::before{
+   content: "+";
+}
+.accordion-button{
+   box-shadow: none !important;
+}
+.accordion-item.open{
+   background-color: white !important;
+   border-radius: 15px;
+}

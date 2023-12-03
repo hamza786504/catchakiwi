@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -33,7 +33,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script> -->
@@ -79,9 +79,9 @@ $(document).ready(function(){
           <i class="fa fa-close"></i>
         </button>
         <div class="d-flex align-items-start h-100 justify-content-start">
-          <div class="h-100 p-2 d-flex flex-column align-items-start">
+          <div class="h-100 p-2 sidebar_cover d-flex flex-column align-items-start">
             <div class="sidebar w-100">
-              <div class="logo_cover pb-3">
+              <div class="logo_cover d-flex align-items-center justify-content-center pb-1">
                 <img src="images/logo.png" class="w-100" alt="logo" />
               </div>
             </div>
@@ -96,24 +96,130 @@ $(document).ready(function(){
               </ul>
             </div>
           </div>
-          <div class="sections pe-3 h-100">
+          <div class="sections pe-2 h-100">
             <div class="section w-100 active" id="happening">
-              <h1 class="text-black">What's happening sections content will get displayed here</h1>
+                <p>It's a pleasure to have you here at Catchakiwi. We are currently having a makeover to better suit you. We're updating to a modernised and user-friendly interface to bring a more enjoyable browsing experience. Our team is working hard to get Catchakiwi feature-rich and looking great.</p>
+                <p>Leave us your email address using the form below to keep informed on the progress of the website and get the chance to become one of the first users of the new site.</p>
+                <p><a href="" class="text-bold text-secondary">Like us on Facebook</a> and <a href="" class="text-bold text-secondary">follow us on Twitter </a> to get exclusive information on the project!</p>
+                <hr />
+                <p class="mt-3">Get updates and get the chance to become one of the first to try the new Catchakiwi</p>
+                <form action="" method="post">
+                  <div class="form-row d-flex">
+                    <div class="form-group col-md-4 px-1">
+                      <input type="email" class="form-control" id="popup_email" placeholder="Email">
+                    </div>
+                    <div class="form-group col-md-4 px-1">
+                      <input type="password" class="form-control" id="popup_password" placeholder="Password">
+                    </div>
+                    <div class="form-group col-md-4 px-1">
+                      <input type="submit" class="form-control popup_notify_submit" id="notify" value="Notify me" />
+                    </div>
+                  </div>
+                </form>
+                <div class="images mt-3 d-flex align-items-start flex-column">
+                  <img src="images/popup-image-1.png" style="max-width: 300px; width: 100%;" alt="image" />
+                  <img src="images/popup-image-2.png" style="max-width: 300px; width: 100%;" alt="image" />
+                </div>
             </div>
             <div class="section w-100" id="info">
-              <h1 class="text-black">Info sections content will get displayed here</h1>
+              <h3 class="text-bold mb-3" style="font-size: 30px;">WHAT IS CATCHAKIWI?</h3>
+              <p>You've seen them in the mall, those crowded corkboards with a patchwork of handwritten ads: "babysitter available", "handcrafted quilts for sale", "for all your gardening needs, call Nigel"…</p>
+
+              <p>From the beginning of time people with goods and services to sell have been trying to connect with people who need those things.</p>
+
+              <p>Now there is a better way.</p>
+              <p>Catchakiwi is the modern equivalent of a community noticeboard, an online forum where ordinary Kiwis with skills and services to offer can connect with an endless supply of fellow-Kiwis who need those things.</p>
+
+              <p>Catchakiwi is about tapping into community resources, bringing seekers and sellers together and forming fruitful relationships that strengthen and sustain communities.</p>
+
+              <p>Being self employed has never been easier. Catchakiwi could be your portal to prosperity.</p>
             </div>
             <div class="section w-100" id="features">
-              <h1 class="text-black">New Features sections content will get displayed here</h1>
+              <h3 class="text-bold mb-3" style="font-size: 30px;">What's changing at Catchakiwi?</h3>
+              <p>Below is just a small amount of the many features you can look forward to seeing in the upcoming release of Catchakiwi</p>
+              <p><span class="text-semibold">Seach-Optimisation:</span> Your searches will bring up the results you're looking for. Adding features like Location and Category will allow you to find the service you're looking for, faster than ever.</p>
+              <p><span class="text-semibold">Category based emails:</span> As a registered user, you will now be able to subscribe to specific categories. You will be notified when there are any local new service providers in a category you have selected.</p>
+              <p><span class="text-semibold">Maps integration:</span> If the service provider allows it, as a registered user you will be able to view the address of the service provider on a map on their profile or on a noticeboard.</p>
+              <p><span class="text-semibold">Advertising Cleanup:</span> We don't appreciate being inundated with advertising popups as we click through a page, and we don't imagine that you do either. We're doing an overhaul on our advertising setup. You will only see ads that interest you for services in your area.</p>
+              <p><span class="text-semibold">Social Media Integration:</span>Catchakiwi will be on the forefront of social media integration. Login with your Facebook, tweet your favourite service provider. The choice is yours.</p>
+              <p><span class="text-semibold">Do more, with less:</span>You will be able to browse more of Catchakiwi without needing to logon. A larger audience will be able to view your profile without requiring a login</p>
+              <p><span class="text-semibold">And many more...</span>There are so many more features that we're thinking up every day. We just can't wait to bring them all to you. Ideas also keep flying in from you, and we urge you to keep them coming. If you have anything you'd like to see in the upcoming release of Catchakiwi, let us know on our facebook page, or tweet us, or email us using the contact section of this website. One of the main strategies and benefits of Catchakiwi is collaboration. In that spirit, we are so enthusiastic to include collaborating with you in the creation the new Catchakiwi.</p>
             </div>
             <div class="section w-100" id="faq">
-              <h1 class="text-black">FAQ sections content will get displayed here</h1>
+              <h3 class="text-semibold" style="font-size: 30px;">Frequently Asked Questions</h3>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item open">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      How can we be contacted about when Catchakiwi will be ready?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Like us on Facebook or follow us on Twitter for exclusive information and offers. If you're only interested in the launch date, let us know by filling out the Contact section of this website.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How can we be contacted about when Catchakiwi will be ready?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Like us on Facebook or follow us on Twitter for exclusive information and offers. If you're only interested in the launch date, let us know by filling out the Contact section of this website.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How can we be contacted about when Catchakiwi will be ready?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Like us on Facebook or follow us on Twitter for exclusive information and offers. If you're only interested in the launch date, let us know by filling out the Contact section of this website.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="section w-100" id="contact">
-              <h1 class="text-black">Contact sections content will get displayed here</h1>
+              <h3 class="text-semibold" style="font-size: 30px;">Send us a message</h3>
+              <form action="/" method="post" class="mt-4">
+                <div class="col-12 mt-3">
+                  <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="col-12 mt-3">
+                  <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="col-12 mt-3">
+                  <input type="tel" class="form-control" id="phone" placeholder="Phone">
+                </div>
+                <div class="col-12 mt-3">
+                  <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                </div>
+                <div class="col-12 mt-3">
+                  <input type="text" class="form-control" id="word" placeholder="Type the word">
+                </div>
+                <div class="col-12 mt-3">
+                  <button type="submit" class="contact_submit">Send</button>
+                </div>
+              </form>
             </div>
             <div class="section w-100" id="sponsors">
-              <h1 class="text-black">Sponsors sections content will get displayed here</h1>
+              <h3 class="text-bold mb-3" style="font-size: 30px;">WHAT IS CATCHAKIWI?</h3>
+              <p>You've seen them in the mall, those crowded corkboards with a patchwork of handwritten ads: "babysitter available", "handcrafted quilts for sale", "for all your gardening needs, call Nigel"…</p>
+              <div class="images d-flex flex-row flex-wrap" style="max-width: 500px;">
+                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
+                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
+                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
+                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
+                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
+                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
+              </div>
             </div>
           </div>
         </div>
