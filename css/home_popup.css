@@ -19,7 +19,7 @@
 }
 .popup_inner{
     border-radius: 7px;
-    max-width: 1000px;
+    max-width: 900px;
     width: 98%;
     margin: 0 auto;
     overflow: hidden;
@@ -206,4 +206,74 @@
 .accordion-item.open{
    background-color: white !important;
    border-radius: 15px;
+}
+
+
+
+
+@media screen and (max-width: 670px) {
+   .popup{
+      flex-direction: column !important;
+   }
+   .sidebar{
+      display: none;
+   }
+   .sidebar_cover{
+      width: 100% !important;
+      padding: 4px !important;
+      height: 55px !important;
+   }
+   .sidebar_navigation ul{
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      overflow-x: scroll;
+      overflow-y: hidden;
+   }
+   .sidebar_navigation{
+      padding: 5px !important;
+   }
+   .sidebar_navigation ul li{
+      list-style:  none !important;
+   }
+   .sidebar_navigation ul li a{
+      padding: 5px 8px !important;
+      height: auto;
+      margin: 0 !important;
+      width: fit-content !important;
+      text-wrap: nowrap;
+   }
+   .sidebar_navigation ul::-webkit-scrollbar {
+      height: 3px;
+   }
+   .sections{
+      padding: 5px !important;
+      height: calc(100vh - 55px) !important;
+      overflow-y: scroll;
+   }
+   .section{
+      padding: 10px !important;
+   }
+    
+   #sponsors .images{
+      margin-bottom: 0px !important;
+   }
+    /* Track */
+    .sidebar_navigation ul::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    /* Handle */
+    .sidebar_navigation ul::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+    
+    /* Handle on hover */
+    .sidebar_navigation ul::-webkit-scrollbar-thumb:hover {
+      background: transparent;
+    }
+    .popup_inner .sections{
+      width: 100%;
+      padding: 10px;
+     }
 }

@@ -78,7 +78,7 @@ $(document).ready(function(){
         <button type="button" class="popup_close">
           <i class="fa fa-close"></i>
         </button>
-        <div class="d-flex align-items-start h-100 justify-content-start">
+        <div class="d-flex align-items-start h-100 justify-content-start popup">
           <div class="h-100 p-2 sidebar_cover d-flex flex-column align-items-start">
             <div class="sidebar w-100">
               <div class="logo_cover d-flex align-items-center justify-content-center pb-1">
@@ -100,18 +100,18 @@ $(document).ready(function(){
             <div class="section w-100 active" id="happening">
                 <p>It's a pleasure to have you here at Catchakiwi. We are currently having a makeover to better suit you. We're updating to a modernised and user-friendly interface to bring a more enjoyable browsing experience. Our team is working hard to get Catchakiwi feature-rich and looking great.</p>
                 <p>Leave us your email address using the form below to keep informed on the progress of the website and get the chance to become one of the first users of the new site.</p>
-                <p><a href="" class="text-bold text-secondary">Like us on Facebook</a> and <a href="" class="text-bold text-secondary">follow us on Twitter </a> to get exclusive information on the project!</p>
+                <p><a href="https://www.facebook.com" class="text-bold text-secondary">Like us on Facebook</a> and <a href="https://www.twitter.com" class="text-bold text-secondary">follow us on Twitter </a> to get exclusive information on the project!</p>
                 <hr />
                 <p class="mt-3">Get updates and get the chance to become one of the first to try the new Catchakiwi</p>
                 <form action="" method="post">
-                  <div class="form-row d-flex">
-                    <div class="form-group col-md-4 px-1">
+                  <div class="form-row d-flex flex-wrap">
+                    <div class="form-group col-sm-6 col-md-4 px-1 mt-2">
                       <input type="email" class="form-control" id="popup_email" placeholder="Email">
                     </div>
-                    <div class="form-group col-md-4 px-1">
+                    <div class="form-group col-sm-6 col-md-4 px-1 mt-2">
                       <input type="password" class="form-control" id="popup_password" placeholder="Password">
                     </div>
-                    <div class="form-group col-md-4 px-1">
+                    <div class="form-group col-sm-6 col-md-4 px-1 mt-2">
                       <input type="submit" class="form-control popup_notify_submit" id="notify" value="Notify me" />
                     </div>
                   </div>
@@ -122,7 +122,7 @@ $(document).ready(function(){
                 </div>
             </div>
             <div class="section w-100" id="info">
-              <h3 class="text-bold mb-3" style="font-size: 30px;">WHAT IS CATCHAKIWI?</h3>
+              <h3 class="text-bold mb-3" style="font-size: 30px; line-height: 35px;">WHAT IS CATCHAKIWI?</h3>
               <p>You've seen them in the mall, those crowded corkboards with a patchwork of handwritten ads: "babysitter available", "handcrafted quilts for sale", "for all your gardening needs, call Nigel"…</p>
 
               <p>From the beginning of time people with goods and services to sell have been trying to connect with people who need those things.</p>
@@ -135,7 +135,7 @@ $(document).ready(function(){
               <p>Being self employed has never been easier. Catchakiwi could be your portal to prosperity.</p>
             </div>
             <div class="section w-100" id="features">
-              <h3 class="text-bold mb-3" style="font-size: 30px;">What's changing at Catchakiwi?</h3>
+              <h3 class="text-bold mb-3" style="font-size: 30px; line-height: 35px;">What's changing at Catchakiwi?</h3>
               <p>Below is just a small amount of the many features you can look forward to seeing in the upcoming release of Catchakiwi</p>
               <p><span class="text-semibold">Seach-Optimisation:</span> Your searches will bring up the results you're looking for. Adding features like Location and Category will allow you to find the service you're looking for, faster than ever.</p>
               <p><span class="text-semibold">Category based emails:</span> As a registered user, you will now be able to subscribe to specific categories. You will be notified when there are any local new service providers in a category you have selected.</p>
@@ -146,7 +146,7 @@ $(document).ready(function(){
               <p><span class="text-semibold">And many more...</span>There are so many more features that we're thinking up every day. We just can't wait to bring them all to you. Ideas also keep flying in from you, and we urge you to keep them coming. If you have anything you'd like to see in the upcoming release of Catchakiwi, let us know on our facebook page, or tweet us, or email us using the contact section of this website. One of the main strategies and benefits of Catchakiwi is collaboration. In that spirit, we are so enthusiastic to include collaborating with you in the creation the new Catchakiwi.</p>
             </div>
             <div class="section w-100" id="faq">
-              <h3 class="text-semibold" style="font-size: 30px;">Frequently Asked Questions</h3>
+              <h3 class="text-semibold" style="font-size: 30px; line-height: 35px;">Frequently Asked Questions</h3>
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item open">
                   <h2 class="accordion-header">
@@ -187,7 +187,7 @@ $(document).ready(function(){
               </div>
             </div>
             <div class="section w-100" id="contact">
-              <h3 class="text-semibold" style="font-size: 30px;">Send us a message</h3>
+              <h3 class="text-semibold" style="font-size: 30px; line-height: 35px;">Send us a message</h3>
               <form action="/" method="post" class="mt-4">
                 <div class="col-12 mt-3">
                   <input type="text" class="form-control" id="name" placeholder="Name">
@@ -210,15 +210,27 @@ $(document).ready(function(){
               </form>
             </div>
             <div class="section w-100" id="sponsors">
-              <h3 class="text-bold mb-3" style="font-size: 30px;">WHAT IS CATCHAKIWI?</h3>
+              <h3 class="text-bold mb-3" style="font-size: 30px; line-height: 35px;">WHAT IS CATCHAKIWI?</h3>
               <p>You've seen them in the mall, those crowded corkboards with a patchwork of handwritten ads: "babysitter available", "handcrafted quilts for sale", "for all your gardening needs, call Nigel"…</p>
-              <div class="images d-flex flex-row flex-wrap" style="max-width: 500px;">
-                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
-                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
-                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
-                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
-                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
-                <div class="col-12 col-md-6 mt-2"><img src="images/popup-image-1.png" style="max-width: 250px; object-fit: cover; padding: 0 5px;" alt="image-1" /></div>
+              <div class="images d-flex flex-row flex-wrap" style="max-width: 530px;">
+                <div class="col-12 col-sm-6 mt-2 px-1">
+                  <img src="images/popup-image-1.png" style="max-width: 250px; width: 100%; margin: 0 auto;" alt="image-1" />
+                </div>
+                <div class="col-12 col-sm-6 mt-2 px-1">
+                  <img src="images/popup-image-1.png" style="max-width: 250px; width: 100%; margin: 0 auto;" alt="image-1" />
+                </div>
+                <div class="col-12 col-sm-6 mt-2 px-1">
+                  <img src="images/popup-image-1.png" style="max-width: 250px; width: 100%; margin: 0 auto;" alt="image-1" />
+                </div>
+                <div class="col-12 col-sm-6 mt-2 px-1">
+                  <img src="images/popup-image-1.png" style="max-width: 250px; width: 100%; margin: 0 auto;" alt="image-1" />
+                </div>
+                <div class="col-12 col-sm-6 mt-2 px-1">
+                  <img src="images/popup-image-1.png" style="max-width: 250px; width: 100%; margin: 0 auto;" alt="image-1" />
+                </div>
+                <div class="col-12 col-sm-6 mt-2 px-1">
+                  <img src="images/popup-image-1.png" style="max-width: 250px; width: 100%; margin: 0 auto;" alt="image-1" />
+                </div>
               </div>
             </div>
           </div>
