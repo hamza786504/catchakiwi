@@ -3,6 +3,9 @@
     --light-balck: #3a3b3d;
     --primary: #9bcd22;
 }
+* , h3{
+   font-family: 'Poppins', sans-serif;
+}
 .popup_outer{
     position: fixed;
     width: 100%;
@@ -84,6 +87,7 @@
     width: 100%;
     padding: 20px 30px;
     display: none;
+    overflow-x: hidden;
  }
  .popup_inner .section.active{
     display: block;
@@ -106,7 +110,7 @@
     color: var(--black) !important;
  }
  .text-bold{
-    font-weight: 700;
+    font-weight: 600;
  }
 
  .popup_notify_submit , .contact_submit{
@@ -148,7 +152,7 @@
 
 
  .text-semibold{
-    font-weight: 600;
+    font-weight: 500;
  }
 
 
