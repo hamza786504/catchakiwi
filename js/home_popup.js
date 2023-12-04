@@ -19,4 +19,12 @@ $(function () {
     accordionItem.toggleClass("collapsed");
     $(this).find(".accordion-button::before").text(icon);
   });
+
+  $(".happening_image_section > img").click(function(){
+    $(this).next('.image_popup').css({"display": "flex"})
+  })
+
+  $(".happening_image_section .image_popup_close").click(function(){
+    $(".happening_image_section .image_popup").css({"display": "none"});
+  })
 });
