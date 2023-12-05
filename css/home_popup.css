@@ -433,6 +433,13 @@ h3 {
   .home_searchsec{
     max-width: 700px;
   }
+  .home_bg{
+    background-image: url(../images/home_meetingbg.png), url(../images/home_bg.png);
+    background-position: right bottom, center top;
+    background-repeat: no-repeat, no-repeat;
+    background-size:auto, cover;
+    min-height: 600px;
+ } 
 }
 
 
