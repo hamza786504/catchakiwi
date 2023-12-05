@@ -17,9 +17,6 @@ min-height: 600px;
 }
 input, textarea{outline:none;}
 /*=============================== Header start ==========================*/
-.top_bar {
-    padding-top: 50px;
-}
 .nz_region{background: url(../images/globe_icon.png) 0 1px no-repeat;
 font-size: 13px;
 color: #fff;

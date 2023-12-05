@@ -248,13 +248,16 @@ h3 {
 }
 
 .top_menu nav {
-  /* display: none !important; */
+  /* display:  none !important; */
 }
 .top_menu .mobtop_login {
   position: relative !important;
   top: auto;
   right: 0;
   margin-right: 5px;
+}
+.top_menu{
+   flex-grow: 1 !important;
 }
 .slide_menu {
   position: relative;
