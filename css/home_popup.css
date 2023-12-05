@@ -263,6 +263,94 @@ h3 {
   position: relative;
   top: auto !important;
 }
+
+
+
+
+
+.newcacpop{
+   background-color: #ffb006;
+   color: white !important;
+   /* max-width: 330px; */
+   width: 100%;
+   margin: 0 0 40px 0 !important;
+}
+
+.add_getqutebutton{
+   display: flex;
+   align-items: center !important;
+   justify-content: center;   
+   margin: 10px auto;
+}
+.add_getqutebutton a{
+   font-size: 14px !important;
+   margin-right: 7px !important;
+   display: inline-block;
+}
+.add_getqutebutton a:last-child{
+   margin-right: 0px !important;
+}
+.footer_links ul li:first-child{
+   margin-left: 0 !important;
+}
+.footer_links ul li{
+   margin-left: 0 !important;
+}
+/* .home_bg{
+   background-image: url(../images/home_meetingbg.png), url(../images/home_bg.png);
+   background-position: right bottom, center top;
+   background-repeat: no-repeat, no-repeat;
+   background-size:auto, cover;
+   min-height: 600px;
+} */
+
+.home_bg{
+   background-image:  url(../images/home_bg.png);
+   background-position: center top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   min-height: 600px;
+}
+
+.home_searchsec{
+   margin: 20px 0 30px 0;
+}
+.home_searchsec input[type="submit"]{
+   /* max-width: 300px;  */
+   width: 100%;
+   margin-top: 8px;
+}
+.home_searchsec input[type="text"]{
+   margin-top: 8px !important;
+   border: none !important;
+   max-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 580px) {
   .slide_menu {
     right: 0px !important;

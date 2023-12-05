@@ -42,7 +42,6 @@
 .top_menu ul li.login_button{display:block; margin: 0 auto; margin-top:40px; width: 170px; background-position:35px center; padding:10px;}
 .top_menu ul{position: absolute;}
 .top_menu nav{display:block; padding-top: 40px;}
-.logo{padding-top:110px;}
 .fot_copyr p.social a{margin: 0 4px;}
 .home_searchsec input[type="text"]{width: 36.5%;}
 .full_footer .container{max-width:inherit;}
@@ -85,8 +84,7 @@ text-align: center;}}
 .desktoplogin{display:none;}
 .top_menu nav ul, .home_midbody p, .home_midbody h2{display:none;}
 .logo img{/*opacity: 0.8;*/}
-.logo{padding-top: 30px;}
-.home_searchsec input[type="submit"]{width: 220px; height: 50px;}
+
 .home_searchsec{margin-top:0}
 .mobtop_login{display: block;
 position: absolute;
@@ -160,7 +158,7 @@ color: #fff;}
 @media only screen and (max-width: 420px) {
 .header-message h3{font-size: 15px;}
 .add_getqutebutton{width:auto;}
-.add_getqutebutton a{display:block; margin:0 auto; margin-bottom:15px;}
+.add_getqutebutton a{display:block;}
 }
 @media only screen and (max-width: 380px) {
 	.top_menu ul li{padding: 0 10px; font-size: 14px;}
