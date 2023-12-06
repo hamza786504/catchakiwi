@@ -268,13 +268,7 @@ h3 {
 
 
 
-.newcacpop{
-   background-color: #ffb006;
-   color: white !important;
-   /* max-width: 330px; */
-   width: 100%;
-   margin: 0 0 40px 0 !important;
-}
+
 
 .add_getqutebutton{
    display: flex;
@@ -309,12 +303,12 @@ h3 {
 } */
 
 .home_bg{
-   background-image:  url(../images/home_bg.png);
-   background-position: center top;
-   background-repeat: no-repeat;
-   background-size: cover;
-   min-height: 600px;
-}
+  background-image: url(../images/home_meetingbg.png), url(../images/home_bg.png);
+  background-position: right bottom, center top;
+  background-repeat: no-repeat, no-repeat;
+  background-size:auto, cover;
+  min-height: 600px;
+} 
 
 .home_searchsec{
    margin: 20px 0 30px 0;
@@ -366,6 +360,202 @@ h3 {
 .for_cellphonepara p{
   padding-bottom: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg {
+  --base-color: #212121;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin-left: -8px;
+ /*use your base color*/
+}
+.newcacpop{
+  background-color: #212121;
+  color: white !important;
+  /* max-width: 330px; */
+  width: 100%;
+  margin: 0 0 40px 0 !important;
+  height: auto !important;
+  padding: 10px 5px !important;
+}
+.loader {
+  width: 60px;
+  height: 40px;
+  position: relative;
+  scale: 0.7;
+  display: inline-block;
+  background-color: var(--base-color);
+}
+
+.loader::before {
+  content: '';
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color:white;
+  background-image: radial-gradient(circle 8px at 18px 18px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 18px 0px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 0px 18px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 36px 18px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 18px 36px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 30px 5px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 30px 5px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 30px 30px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 5px 30px, var(--base-color) 100%, transparent 0), radial-gradient(circle 4px at 5px 5px, var(--base-color) 100%, transparent 0);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  animation: rotationBack 3s linear infinite;
+}
+
+.loader::after {
+  content: '';
+  left: 35px;
+  top: 15px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: radial-gradient(circle 5px at 12px 12px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 12px 0px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 0px 12px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 24px 12px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 12px 24px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 20px 3px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 20px 3px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 20px 20px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 3px 20px, var(--base-color) 100%, transparent 0), radial-gradient(circle 2.5px at 3px 3px, var(--base-color) 100%, transparent 0);
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  animation: rotationBack 4s linear infinite reverse;
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 375px) {
    .logo{
       max-width: 350px;
@@ -433,13 +623,6 @@ h3 {
   .home_searchsec{
     max-width: 700px;
   }
-  .home_bg{
-    background-image: url(../images/home_meetingbg.png), url(../images/home_bg.png);
-    background-position: right bottom, center top;
-    background-repeat: no-repeat, no-repeat;
-    background-size:auto, cover;
-    min-height: 600px;
- } 
 }
 
 
