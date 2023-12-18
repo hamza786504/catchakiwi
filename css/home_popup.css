@@ -711,9 +711,22 @@ h3 {
     overflow-x: scroll;
     overflow-y: hidden;
   }
+  .sidebar_navigation::after{
+    position: absolute;
+    top: 0;
+    right: -2px;
+    content: "";
+    height: 100%;
+    width: 60px;
+    background: linear-gradient(90deg , transparent , transparent, transparent , rgba(252, 252, 252, 0.678) , rgb(252, 252, 252) );
+    color: black;
+    border-radius: 7px;
+  }
   .sidebar_navigation {
     padding: 5px 5px 3px !important;
     width: calc(100% - 34px) !important;
+    position: relative;
+    
   }
   .sidebar_navigation ul li {
     list-style: none !important;
